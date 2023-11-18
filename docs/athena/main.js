@@ -56,6 +56,11 @@ function update() {
   color("red");
   rect(Ransquare.pos.x, Ransquare.pos.y, Ransquare.width, Ransquare.height);
 
+  // Check for collision with Ransquare
+  if (rect(Ransquare.pos.x, Ransquare.pos.y, Ransquare.width, Ransquare.height).isColliding.rect.light_blue) {
+    end();
+  }
+
   // delays the speed in which the square automatically shrinks to a 2x2 square
   if(!playerTimerActive){
     playerTimer(200);

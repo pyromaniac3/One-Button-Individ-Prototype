@@ -1,9 +1,9 @@
 title = "SQUARES";
 
 description = `
-[tap] to make 
-the square 
-dance!
+[tap] to change 
+size to avoid 
+the red square!
 `;
 
 characters = [];
